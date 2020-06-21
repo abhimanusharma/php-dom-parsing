@@ -13,6 +13,8 @@ $urls = [
     'http://www.mycorporateinfo.com/business/mardia-farms-limited'
 ];
 
-$scraper->scrape(... $urls)->then('print_r');
+$factory = new \React\MySQL\Factory($loop);
+$connection = $factory->createLazyConnection('root:@localhost/123456');
+$scraper->scrape(...$urls)->then('print_r');
 
 $loop->run();

@@ -17,6 +17,7 @@ return array(
     'React\\Promise\\Timer\\' => array($vendorDir . '/react/promise-timer/src'),
     'React\\Promise\\Stream\\' => array($vendorDir . '/react/promise-stream/src'),
     'React\\Promise\\' => array($vendorDir . '/react/promise/src'),
+    'React\\MySQL\\' => array($vendorDir . '/react/mysql/src'),
     'React\\HttpClient\\' => array($vendorDir . '/react/http-client/src'),
     'React\\EventLoop\\' => array($vendorDir . '/react/event-loop/src'),
     'React\\Dns\\' => array($vendorDir . '/react/dns/src'),

@@ -1,5 +1,4 @@
 <?php
-
 namespace AsyncScraper;
 
 use Clue\React\Buzz\Browser;
@@ -32,8 +31,8 @@ final class Scraper
         $crawler = new Crawler($responseBody);
         $data = $crawler->filter('#companyinformation table tbody tr td')
         ->extract(['_text']);
-        return new Company($data);
-    }
+        return new Company(...$data);
+    }   
 
     private function extractFromUrl($url): PromiseInterface
     {

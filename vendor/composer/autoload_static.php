@@ -33,6 +33,7 @@ class ComposerStaticInitfd7b305bcbeb042d4c16c7ef8de013b4
             'React\\Promise\\Timer\\' => 20,
             'React\\Promise\\Stream\\' => 21,
             'React\\Promise\\' => 14,
+            'React\\MySQL\\' => 12,
             'React\\HttpClient\\' => 17,
             'React\\EventLoop\\' => 16,
             'React\\Dns\\' => 10,
@@ -96,6 +97,10 @@ class ComposerStaticInitfd7b305bcbeb042d4c16c7ef8de013b4
         'React\\Promise\\' => 
         array (
             0 => __DIR__ . '/..' . '/react/promise/src',
+        ),
+        'React\\MySQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/mysql/src',
         ),
         'React\\HttpClient\\' => 
         array (
