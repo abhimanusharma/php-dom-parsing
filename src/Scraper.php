@@ -31,6 +31,7 @@ final class Scraper
         $crawler = new Crawler($responseBody);
         $data = $crawler->filter('#companyinformation table tbody tr td')
         ->extract(['_text']);
+        foreach($data as $key => $value) if(!($key&1)) unset($data[$key]);
         return new Company(...$data);
     }   
 

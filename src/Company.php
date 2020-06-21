@@ -16,7 +16,16 @@ final class Company
     public function toArray(): array
     {
         return [
-            'data' => json_encode($this->data)
+            'cin' => $this->data[0],
+            'name' => $this->data[1],
+            'status' => $this->data[2],
+            'age' => $this->data[3],
+            'registration_number' => $this->data[4],
+            'category' => $this->data[5],
+            'subcategory' => $this->data[6],
+            'class' => $this->data[7],
+            'roc_code' => $this->data[8],
+            'total_members' => $this->data[9]
         ];
     }
 }

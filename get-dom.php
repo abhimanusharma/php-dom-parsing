@@ -16,6 +16,7 @@ $browser
 ->then(function (ResponseInterface $response) {
     $crawler = new Crawler((string) $response->getBody());
     $data = $crawler->filter('#companyinformation table tbody tr td')->extract(['_text']);
+    foreach($data as $key => $value) if(!($key&1)) unset($data[$key]);
     print_r($data);
 });
 //#companyinformation
