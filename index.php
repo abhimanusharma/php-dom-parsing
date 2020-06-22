@@ -13,10 +13,10 @@ $urls = [
     'http://www.mycorporateinfo.com/business/mardia-farms-limited'
 ];
 
-$storage = new \AsyncScraper\Storage($loop, 'root:123456@localhost/php_dom_parsing');
+$storage = new \AsyncScraper\Storage($loop, 'root:123456@localhost/php_dom_parsing?idle=0');
 $scraper->scrape(...$urls)->then(
     function (array $companies) use ($storage){
-        $storage->save(...$companies);        
+        $storage->save(...$companies);
         $storage->quit();
     }
 );
